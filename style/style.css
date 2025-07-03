@@ -1,4 +1,4 @@
-@import url(./button.css);
+ @import url(./button.css);
 *{
     margin: 0;
     padding: 0;
@@ -42,7 +42,8 @@ body{
 }
 
 header{
-    width: 1220px;
+    max-width: 1220px;
+    width: 100%;
     margin: 0 auto;
     height: 100px;
     display: flex;
@@ -57,7 +58,7 @@ header{
 }
 
 main{
-    min-height: 80vh;
+    min-height: 85vh;
     height: auto;
     display: flex;
     align-items: center;
@@ -117,5 +118,11 @@ main{
     }
     100%{
         transform: scale(1);
+    }
+}
+
+@media screen and (max-width:500px) {
+    .digit-clock{
+        font-size: 3rem;
     }
 }
